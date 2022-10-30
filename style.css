@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+}
+main{
+    padding: 2% 5%;
+
+}
+header{   
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    box-shadow: 0px 1px 4px black;
+}
+header > h2{ color: black;}
+header > div{ color: black;}
+#container{
+    position: relative;
+}
+
+.searchMenu{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.srcbox{ 
+    padding: 10px;
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 6px;
+
+}
+.btnSrc{ 
+    padding: 10px;
+    width: 80px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background:gray;
+    color: white;
+
+}
+#region{ 
+    padding: 4px;
+    width: 80px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+/*  Loop Section Start */
+#section{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+   
+    
+}
+.countryDiv{ 
+    margin: 5%;
+    box-shadow: 1px 2px 10px black;
+}
+.countryDiv > img{ 
+   width: 100%;
+   height: 50%; 
+   
+}
+.innerText{ 
+    padding: 4%;
+}
+
+.innerText p{ margin-top: 5px;}
+
+#allinformation{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+     justify-content: start;
+     align-items: start;
+
+}
+#bgrc{
+    padding: 32px;
+     background-color: white;
+   width: 100%;
+   height: 100%;
+}
+/*   pop up Design */
+#back{
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px black;
+    width: 100px;
+    font-weight: bolder;
+}
+
+#popupimg{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.imgdiv{ 
+    flex: 50%;
+}
+.imgdiv img{
+    width: 100%;
+}
+.txtContainerdiv{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+.topdiv{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    }
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.bottomdiv{
+    padding: 5%;
+}
+
+
+/*     ================================            */
+/*     ================================            */
+
+
+@media(max-width: 768px) {
+    
+main{
+    padding: 1% 2%;
+
+}
+header{   
+    display: flex;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 10000;
+    justify-content: space-between;
+    padding: 2% 5%;
+    box-shadow: 0px 1px 4px black;
+}
+
+#container{
+    position: relative;
+}
+
+.searchMenu{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.srcbox{ 
+    padding: 8px;
+    width: 200px;
+    border: 2px solid gray;
+    border-radius: 6px;
+
+}
+.btnSrc{ 
+    padding: 8px;
+    width: 80px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background:gray;
+    color: white;
+
+}
+#region{ 
+    padding: 4px;
+    width: 80px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+/*  Loop Section Start */
+#section{
+  margin-top: 20px;
+  grid-template-columns: 1fr ;
+  
+   
+    
+}
+.countryDiv{ 
+    margin: 5%;
+    box-shadow: 1px 2px 10px black;
+}
+.countryDiv > img{ 
+   width: 100%;
+   height: 50%; 
+   
+}
+.innerText{ 
+    padding: 4%;
+}
+
+.innerText p{ margin-top: 5px;}
+
+#allinformation{
+    position: fixed;
+    top:6.5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+     justify-content: start;
+     align-items: start;
+
+}
+#bgrc{
+    padding: 0px;
+     background-color: white;
+   width: 100%;
+   height: 100%;
+}
+/*   pop up Design */
+#back{
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px black;
+    width: 80px;
+    font-weight: bolder;
+}
+
+#popupimg{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgdiv img{
+    width: 100%;
+}
+.txtContainerdiv{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+.topdiv{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    }
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.bottomdiv{
+    padding: 5%;
+}
+
+    
+}
