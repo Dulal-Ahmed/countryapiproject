@@ -49,7 +49,7 @@ const showdataimage =(g)=>{
             <div class="topdiv">
                 <div class="left">
                      <h1>${globalvar[g].name.common}</h1>
-                     <P><b>Native Name :</b> ${globalvar[g].name.nativeName.official}</P>
+                     <P><b>Native Name :</b> ${globalvar[g].name.official}</P>
                      <P><b>Population:</b> ${globalvar[g].population}</P>
                      <P><b>Region:</b>${globalvar[g].region} </P>
                      <P><b>Sub Region:</b>${globalvar[g].subregion}</P>
@@ -57,8 +57,8 @@ const showdataimage =(g)=>{
               </div>
                 <div class="right"> 
                     <p><b>Top Level Domain:</b>${globalvar[g].tld } </p>
-                    <p><b>Currencies :</b>${globalvar[g].currencies.BBD }</p>
-                    <p><b>Languages :</b>${globalvar[g].languages }</p>
+                    <p><b>Currencies :</b>${globalvar[g].currencies.BBD.name }</p>
+                    <p><b>Languages :</b>${globalvar[g].languages.eng }</p>
                 </div>
             </div>
         <div class="bottomdiv">
@@ -93,6 +93,7 @@ submit.onclick = ()=>{
  }
 const showdataimageses =(country)=>{
     globalvar = country;
+   
 for(let i=0; i < country.length; i++){
 
     section.innerHTML += `
