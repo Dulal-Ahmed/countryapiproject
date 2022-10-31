@@ -57,8 +57,8 @@ const showdataimage =(g)=>{
               </div>
                 <div class="right"> 
                     <p><b>Top Level Domain:</b>${globalvar[g].tld } </p>
-                    <p><b>Currencies :</b>${globalvar[g].currencies.BBD.name }</p>
-                    <p><b>Languages :</b>${globalvar[g].languages.eng }</p>
+                    <p><b>Currencies :</b>${globalvar[g].currencies}</p>
+                    <p><b>Languages :</b>${globalvar[g].languages }</p>
                 </div>
             </div>
         <div class="bottomdiv">
